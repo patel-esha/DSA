@@ -145,16 +145,6 @@ TEST_CASE("Positive and Negative", "[IQR]")
 }
 
 
-// the syntax for defining a test is below. It is important for the name to be unique, 
-// but you can group multiple tests with [tags]. A test can have [multiple][tags] using that syntax.
-
-	// each section runs the setup code independently to ensure that they don't affect each other
-
-
-// you must write 5 unique, meaningful tests for credit on the testing portion of this quiz!
-
-// the provided tests from edugator are below. Note that you must determine the correct output for the [output_hidden] tests yourself
-
 TEST_CASE("Function: IQR 1", "[given]") {
 	std::vector<int> v = {2, 4, 4, 5, 6, 7, 8};
 	Node* head = nullptr;
