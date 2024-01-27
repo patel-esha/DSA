@@ -27,16 +27,16 @@ class Node {
 
 Node* insertEnd(Node* head, int key)
 {
-    Node* temp = new Node();
-    temp->value = key;
+    Node* traverser = new Node();
+    traverser->value = key;
     if(head == nullptr)
-        head = temp;
+        head = traverser;
     else
     {
         Node* curr = head;
         while(curr->next != nullptr)
             curr = curr->next;
-        curr->next = temp;
+        curr->next = traverser;
     }
     return head;
 }
